@@ -1,0 +1,90 @@
+body,
+input {
+  background-color: gainsboro;
+  font-family: "Epilogue", sans-serif;
+}
+
+.todos {
+  box-shadow: 0 0 8px #888888;
+  width: 40vw;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 0;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#todo-input {
+  height: 40px;
+  width: 37vw;
+  padding-right: 20px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  border-width: 0;
+}
+
+.selection {
+  font-size: 0.8rem;
+  min-height: 2vh;
+  padding: 8px 20px;
+  border-style: none none solid none;
+  border-width: 1px;
+  border-color: gainsboro;
+}
+
+form {
+  padding: 0 15px;
+}
+
+#a-left,
+#a-right,
+#p-left {
+  color: gray;
+  text-decoration: none;
+}
+
+#a-left {
+  float: left;
+}
+
+#a-right {
+  float: right;
+}
+
+p {
+  padding-left: 15px;
+  margin: 0;
+}
+
+/* For the list of todos */
+li {
+  font-size: 1.4rem;
+  padding-bottom: 15px;
+  padding-right: 25px;
+  text-align: left;
+  list-style-type: none;
+}
+
+ul {
+  padding-left: 23px;
+}
+
+button {
+  background-color: white;
+  border: none;
+  float: right;
+}
+
+.todo-list {
+  border-style: none none solid none;
+  border-width: 1px;
+  border-color: gainsboro;
+}
+
+input[type="checkbox"]:checked + label.strikethrough {
+  text-decoration: line-through;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/77537fea5c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link to api for fonts from google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- External css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>TODO App</title>
+  </head>
+  <body>
+    <div class="todos">
+      <section class="todo-input">
+        <h1>TODO List</h1>
+        <form onsubmit="addTodo(event)">
+          <input type="text" id="todo-input" placeholder="Type your todo" />
+          <div class="selection">
+            <a href="" id="a-left"
+              ><i class="fas fa-check-double"></i>&nbsp;&nbsp;Complete all
+              tasks</a
+            >
+            <a href="" id="a-right">Clear completed</a>
+          </div>
+        </form>
+      </section>
+      <section class="todo-list">
+        <ul id="list"></ul>
+      </section>
+      <section class="foot">
+        <div class="selection">
+          <p id="p-left"></p>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
